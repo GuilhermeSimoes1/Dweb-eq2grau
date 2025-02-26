@@ -15,6 +15,29 @@ namespace Eq2Grau.Controllers
 
         public IActionResult Index()
         {
+            /* ALGORITMO
+             *  1- Ler parâmetros a,b,c
+             *  
+             *  2- Verificar se os parâmetros são números
+             *     se não, criar msg aviso
+             *     se sim, continuo
+             *     
+             *  3- a != 0 ??
+             *  se não, mostro msg de aviso
+             *  
+             *  4- calcular Delta = b2-4ac
+             *      4.1 - se Delta > 0, calcular raízes reais 
+             *          x1 = (-b - sqrt(DELTA))/2/a
+             *          x2 = (-b + sqrt(DELTA))/2/a
+             *      4.2 - se DELTA = 0
+             *            x1 = x2 = (-b)/2/a
+             *      4.3 - se DELTA < 0, calcular raízes complexas
+             *            x1 = (-b)/2/a '+' sqrt(-DELTA))/2/a 'i'
+             *            x2 = (-b)/2/a '-' sqrt(-DELTA))/2/a 'i'
+             * 
+             *  5- Apresentar o resultado na VIEW
+             */
+
             return View();
         }
 
